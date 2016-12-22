@@ -1,0 +1,44 @@
+DruhyRodic1:
+AK (?X je rodic ?Y)(manzelia ?X ?Z)
+Pridaj
+?Z je rodic ?Y
+Koniec;
+DruhyRodic2:
+AK (?X je rodic ?Y)(manzelia ?Z ?X)
+Pridaj
+?Z je rodic ?Y
+Koniec;
+Otec:
+AK (?X je rodic ?Y)(muz ?X)
+Pridaj
+?X je otec ?Y
+Koniec;
+Matka:
+AK (?X je rodic ?Y)(zena ?X)
+Pridaj
+?X je matka ?Y
+Koniec;
+Surodenci:
+AK (?X je rodic ?Y)(?X je rodic ?Z)(<> ?Y ?Z)
+Pridaj
+?Y a ?Z su surodenci
+Koniec;
+Brat:
+AK (?Y a ?Z su surodenci)(muz ?Y)
+Pridaj
+?Y je brat ?Z
+Koniec;
+Fakty:
+?Peter je rodic ?Jano
+?Peter je rodic ?Vlado
+manzelia ?Peter ?Eva
+?Vlado je rodic ?Maria
+?Vlado je rodic ?Viera
+<> ?Maria ?Viera
+<> ?Jano ?Vlado
+muz ?Peter
+muz ?Jano
+muz ?Vlado
+zena ?Maria
+zena ?Viera
+zena ?Eva
